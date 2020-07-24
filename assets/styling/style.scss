@@ -1,0 +1,70 @@
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+  transition: all .5s;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  li {
+    list-style-type: none;
+  }
+  
+
+/*********************************/
+/* Main */
+/*********************************/
+
+main {
+  padding: 5% 0;
+  .weather {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/*********************************/
+/* Form */
+/*********************************/
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+
+  label {
+    padding-right: 10px;
+  }
+
+  input {
+    width: 300px;
+    padding: 10px 0;
+    border-bottom: 2px solid #0984e3;
+
+    &:focus, &:focus::-webkit-input-placeholder {
+      outline: none;
+    }
+
+    &:first-child {
+      margin-right: 10px;
+    }
+  }
+
+  button {
+    padding: 10px;
+    border-radius: 4px;
+    margin-left: 5px;
+    background-color: #0984e3;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
