@@ -19,7 +19,7 @@ a {
 }
 
 body {
-  background-color: #273c75;
+  background-color: #4834d4;
 }
 /*********************************/
 /* Main */
@@ -95,14 +95,11 @@ main {
   height: 350px;
   margin: 5% auto 0;
   border-radius: 10px;
-  background-image: linear-gradient(to right, #ff0084 0%, #33001b 100%);
+  background-image: radial-gradient( circle 583px at 1.2% 51%,  rgba(234,94,123,1) 0%, rgba(236,112,101,1) 100.3% );
 
   .icon-box {
     padding: 20px 0 0 20px;
-    .sun {
-      display: none;
-      width: 100px;
-    }
+    
   }
 
   .temperature-box {
@@ -138,12 +135,9 @@ main {
   }
 }
 
-.show {
-  display: block !important;
-}
-
-.hide {
-  display: none !important;
+.sun {
+  display: none;
+  width: 100px;
 }
 
 /*********************************/
@@ -194,6 +188,12 @@ main {
   }
 }
 
+.show {
+  display: block;
+}
 
+.hide {
+  display: none;
+}
 
 

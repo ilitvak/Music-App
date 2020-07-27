@@ -20,7 +20,7 @@ li {
 }
 
 body {
-  background-color: #273c75;
+  background-color: #4834d4;
 }
 
 /*********************************/
@@ -98,17 +98,11 @@ main .weather h2 {
   height: 350px;
   margin: 5% auto 0;
   border-radius: 10px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#ff0084), to(#33001b));
-  background-image: linear-gradient(to right, #ff0084 0%, #33001b 100%);
+  background-image: radial-gradient(circle 583px at 1.2% 51%, #ea5e7b 0%, #ec7065 100.3%);
 }
 
 .weather-box .icon-box {
   padding: 20px 0 0 20px;
-}
-
-.weather-box .icon-box .sun {
-  display: none;
-  width: 100px;
 }
 
 .weather-box .temperature-box {
@@ -142,12 +136,9 @@ main .weather h2 {
   color: #fff;
 }
 
-.show {
-  display: block !important;
-}
-
-.hide {
-  display: none !important;
+.sun {
+  display: none;
+  width: 100px;
 }
 
 /*********************************/
@@ -196,5 +187,13 @@ main .weather h2 {
 
 .area h2 {
   color: #fff;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

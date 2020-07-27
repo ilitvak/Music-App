@@ -1,6 +1,6 @@
 const btn = document.querySelector('.submit-btn');
 let userInputCity = '';
-let userInputState = '';
+let userInputCountry = '';
 const apiKey = '0e594c0ceb55881382f48cdbfdbafd1d';
 
 let wind = 0;
@@ -27,8 +27,9 @@ btn.addEventListener('click', function(e){
 
     e.preventDefault();
     userInputCity = document.querySelector('.zipCode').value;
+    // userInputCountry = document.querySelector('.country').value;
 
-    axios.get(`http://api.openweathermap.org/data/2.5/weather?zip=${userInputCity},${userInputState}&APPID=${apiKey}`)
+    axios.get(`http://api.openweathermap.org/data/2.5/weather?zip=${userInputCity},${userInputCountry}&APPID=${apiKey}`)
         .then(function(response){
             console.log(response.data);
 
@@ -47,7 +48,12 @@ btn.addEventListener('click', function(e){
             area = response.data.name;
 
             if(currentTemp > 70){
+                console.log(currentTemp);
                 document.querySelector('.sun').classList.add('show');
+                document.querySelector('.sun').classList.remove('hide');
+            } else {
+                document.querySelector('.sun').classList.remove('show');
+                document.querySelector('.sun').classList.add('hide');
             } 
 
             temperatureText.innerHTML = currentTemp + '°';
@@ -65,15 +71,3 @@ btn.addEventListener('click', function(e){
             console.log(err);
         })   
     });
-
-
-
-
-//const apiKEY = 'f12a1950f4679d31d6d5ff0f098477c4';
-
-//API CALL
-/*
-https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&
-exclude={part}&appid={f12a1950f4679d31d6d5ff0f098477c4}
-*/
-
