@@ -12,22 +12,29 @@
 a {
     text-decoration: none;
     color: #fff;
-  }
+}
 
   li {
     list-style-type: none;
-  }
-  
+}
 
+body {
+  background-color: #273c75;
+}
 /*********************************/
 /* Main */
 /*********************************/
 
 main {
   padding: 5% 0;
+
   .weather {
     width: 100%;
-    text-align: center;
+    text-align: center; 
+
+    h2 {
+      color: #fff;
+    }
   }
 }
 
@@ -35,36 +42,108 @@ main {
 /* Form */
 /*********************************/
 
-form {
+.form-container {
+  form {
+    display: flex;
+    justify-content: center;
+  
+    label {
+      padding-right: 10px;
+    }
+  
+    input {
+      width: 300px;
+      padding: 10px 0;
+      border-bottom: 2px solid #0984e3;
+      background-color: transparent;
+      color: #fff;
+
+      &:focus, &:focus::-webkit-input-placeholder {
+        outline: none;
+      }
+  
+      &:first-child {
+        margin-right: 10px;
+      }
+      
+      &::-webkit-input-placeholder {
+        color: #fff;
+      }
+    }
+  
+    button {
+      padding: 10px;
+      border-radius: 4px;
+      margin-left: 5px;
+      background-color: #0984e3;
+      color: #fff;
+      cursor: pointer;
+  
+      &:focus {
+        outline: none;
+      }
+      &:hover {
+        background-color: #00b894;
+      }
+    }
+  } 
+}
+
+.weather-box {
   display: flex;
-  justify-content: center;
-  margin-top: 10%;
+  position: relative;
+  width: 800px;
+  height: 350px;
+  margin: 5% auto 0;
+  border-radius: 10px;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(228,13,205,1) 35%, rgba(171,0,255,1) 100%);
 
-  label {
-    padding-right: 10px;
-  }
-
-  input {
-    width: 300px;
-    padding: 10px 0;
-    border-bottom: 2px solid #0984e3;
-
-    &:focus, &:focus::-webkit-input-placeholder {
-      outline: none;
-    }
-
-    &:first-child {
-      margin-right: 10px;
+  .icon-box {
+    padding: 20px 0 0 20px;
+    .sun {
+      display: none;
+      width: 100px;
     }
   }
 
-  button {
-    padding: 10px;
-    border-radius: 4px;
-    margin-left: 5px;
-    background-color: #0984e3;
-    color: #fff;
-    cursor: pointer;
+  .temperature-box {
+    padding: 9px 0 0 25px;
+
+    .temperature {
+      font-size: 60px;
+      color: #fff;
+      font-family: 'Vast Shadow', cursive;
+    }
+
+    h2 {
+      color: #fff;
+      font-size: 28px;
+      font-weight: 300;
+    }
+  }
+
+  .min-max-box {
+    position: absolute;
+    top: 20px;
+    right: 100px;
+    padding: 0 20px 0 0 ;
+
+    .min, .max {
+      padding-top: 5px;
+      color: #fff;
+    }
   }
 }
+
+.show {
+  display: block !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+
+
 

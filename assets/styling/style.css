@@ -19,6 +19,10 @@ li {
   list-style-type: none;
 }
 
+body {
+  background-color: #273c75;
+}
+
 /*********************************/
 /* Main */
 /*********************************/
@@ -31,43 +35,119 @@ main .weather {
   text-align: center;
 }
 
+main .weather h2 {
+  color: #fff;
+}
+
 /*********************************/
 /* Form */
 /*********************************/
-form {
+.form-container form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 10%;
 }
 
-form label {
+.form-container form label {
   padding-right: 10px;
 }
 
-form input {
+.form-container form input {
   width: 300px;
   padding: 10px 0;
   border-bottom: 2px solid #0984e3;
+  background-color: transparent;
+  color: #fff;
 }
 
-form input:focus, form input:focus::-webkit-input-placeholder {
+.form-container form input:focus, .form-container form input:focus::-webkit-input-placeholder {
   outline: none;
 }
 
-form input:first-child {
+.form-container form input:first-child {
   margin-right: 10px;
 }
 
-form button {
+.form-container form input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.form-container form button {
   padding: 10px;
   border-radius: 4px;
   margin-left: 5px;
   background-color: #0984e3;
   color: #fff;
   cursor: pointer;
+}
+
+.form-container form button:focus {
+  outline: none;
+}
+
+.form-container form button:hover {
+  background-color: #00b894;
+}
+
+.weather-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 800px;
+  height: 350px;
+  margin: 5% auto 0;
+  border-radius: 10px;
+  background: #020024;
+  background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(35%, #e40dcd), to(#ab00ff));
+  background: linear-gradient(90deg, #020024 0%, #e40dcd 35%, #ab00ff 100%);
+}
+
+.weather-box .icon-box {
+  padding: 20px 0 0 20px;
+}
+
+.weather-box .icon-box .sun {
+  display: none;
+  width: 100px;
+}
+
+.weather-box .temperature-box {
+  padding: 9px 0 0 25px;
+}
+
+.weather-box .temperature-box .temperature {
+  font-size: 60px;
+  color: #fff;
+  font-family: 'Vast Shadow', cursive;
+}
+
+.weather-box .temperature-box h2 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 300;
+}
+
+.weather-box .min-max-box {
+  position: absolute;
+  top: 20px;
+  right: 100px;
+  padding: 0 20px 0 0;
+}
+
+.weather-box .min-max-box .min, .weather-box .min-max-box .max {
+  padding-top: 5px;
+  color: #fff;
+}
+
+.show {
+  display: block !important;
+}
+
+.hide {
+  display: none !important;
 }
 /*# sourceMappingURL=style.css.map */

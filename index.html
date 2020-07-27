@@ -10,6 +10,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="assets/styling/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:normal|Vast+Shadow" rel="stylesheet">
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -17,17 +18,38 @@
         <![endif]-->
         <main>
             <div class="weather">
-                <h2>Am I Going to Freeze my Ass Off?</h2>
+                <h2>What's the weather?</h2>
             </div>
         </main>
 
         <section>
             <div class="form-container">
                 <form action="">
-                    <input class='city' type="text" placeholder='City'>
-                    <input class='state' type="text" placeholder='State'>
+                    <input class='zipCode' type="text" placeholder='input zip code here'>
+                    <!-- <input class='country' type="text" placeholder='State (example: NYC)'> -->
                     <button class='submit-btn'>Submit</button>
                 </form>
+            </div>
+
+            <div class='weather-box'>
+                <div class='icon-box'>
+                    <img class='sun' src="/assets/images/sun-icon.png" alt="">
+                </div>
+                <div class='temperature-box'>
+                    <div class='temperature'>
+                        <p></p>
+                        <h2></h2>
+                    </div>
+                </div>
+
+                <div class='min-max-box'>
+                    <div class='min'>
+                        <p></p>
+                    </div>
+                    <div class='max'>
+                        <p></p>
+                    </div>
+                </div>
             </div>
         </section>
     
