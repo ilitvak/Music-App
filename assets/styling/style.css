@@ -93,17 +93,13 @@ main .weather h2 {
 }
 
 .weather-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   position: relative;
   width: 800px;
   height: 350px;
   margin: 5% auto 0;
   border-radius: 10px;
-  background: #020024;
-  background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(35%, #e40dcd), to(#ab00ff));
-  background: linear-gradient(90deg, #020024 0%, #e40dcd 35%, #ab00ff 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#ff0084), to(#33001b));
+  background-image: linear-gradient(to right, #ff0084 0%, #33001b 100%);
 }
 
 .weather-box .icon-box {
@@ -117,6 +113,9 @@ main .weather h2 {
 
 .weather-box .temperature-box {
   padding: 9px 0 0 25px;
+  position: absolute;
+  left: 133px;
+  top: 2px;
 }
 
 .weather-box .temperature-box .temperature {
@@ -149,5 +148,53 @@ main .weather h2 {
 
 .hide {
   display: none !important;
+}
+
+/*********************************/
+/* Bottom Icons */
+/*********************************/
+.bottom-icons {
+  display: none;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.bottom-icons .icons-container {
+  display: inline-block;
+  position: relative;
+  width: auto;
+  padding: 0 25px;
+}
+
+.bottom-icons .icons-container .sunrise {
+  position: relative;
+  left: 0;
+}
+
+.bottom-icons .icons-container .sunset {
+  position: relative;
+  width: 84px;
+}
+
+.bottom-icons .icons-container p {
+  display: inline-block;
+  position: relative;
+  top: -16px;
+  left: 5px;
+  color: #fff;
+}
+
+.area {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.area h2 {
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */

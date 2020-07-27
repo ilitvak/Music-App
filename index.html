@@ -25,15 +25,15 @@
         <section>
             <div class="form-container">
                 <form action="">
-                    <input class='zipCode' type="text" placeholder='input zip code here'>
-                    <!-- <input class='country' type="text" placeholder='State (example: NYC)'> -->
+                    <input class='zipCode' type="text" placeholder='input zip code here' required>
+                    <input class='country' type="text" placeholder='Enter Country Here optional'>
                     <button class='submit-btn'>Submit</button>
                 </form>
             </div>
 
             <div class='weather-box'>
                 <div class='icon-box'>
-                    <img class='sun' src="/assets/images/sun-icon.png" alt="">
+                    <img class='sun' src="/assets/images/sun-icon.png" alt="sun icon">
                 </div>
                 <div class='temperature-box'>
                     <div class='temperature'>
@@ -49,6 +49,29 @@
                     <div class='max'>
                         <p></p>
                     </div>
+                </div>
+
+                <div class='bottom-icons'>
+                    <div class='icons-container sunrises'>
+                        <img class='sunrise' src="/assets/images/sunrise.png" alt="sunrise icon">
+                        <p class='sunrise-text'></p>
+                    </div>
+                    <div class='icons-container sunsets'>
+                        <img class='sunset' src="/assets/images/sunset.png" alt="sunset icon">
+                        <p class='sunset-text'></p>
+                    </div>
+                    <div class='icons-container wind'>
+                        <img class='wind-icon' src="/assets/images/wind-icon.png" alt="wind icon">
+                        <p class='wind-text'></p>
+                    </div>
+                    <div class='icons-container'>
+                        <img class='humidity-icon' src="/assets/images/humidity.png" alt="wind icon">
+                        <p class='humidity-text'></p>
+                    </div>
+                </div>
+
+                <div class='area'>
+                    <h2></h2>
                 </div>
             </div>
         </section>

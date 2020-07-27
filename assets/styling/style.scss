@@ -90,14 +90,12 @@ main {
 }
 
 .weather-box {
-  display: flex;
   position: relative;
   width: 800px;
   height: 350px;
   margin: 5% auto 0;
   border-radius: 10px;
-  background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(228,13,205,1) 35%, rgba(171,0,255,1) 100%);
+  background-image: linear-gradient(to right, #ff0084 0%, #33001b 100%);
 
   .icon-box {
     padding: 20px 0 0 20px;
@@ -109,6 +107,10 @@ main {
 
   .temperature-box {
     padding: 9px 0 0 25px;
+    position: absolute;
+    left: 133px;
+    top: 2px;
+
 
     .temperature {
       font-size: 60px;
@@ -142,6 +144,54 @@ main {
 
 .hide {
   display: none !important;
+}
+
+/*********************************/
+/* Bottom Icons */
+/*********************************/
+
+.bottom-icons {
+  display: none;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+
+  .icons-container {
+    display: inline-block;
+    position: relative;
+    width: auto;
+    padding: 0 25px;
+
+    .sunrise {
+      position: relative;
+      left: 0;
+    }
+
+    .sunset {
+      position: relative;
+      width: 84px;
+    }
+
+    p {
+      display: inline-block;
+      position: relative;
+      top: -16px;
+      left: 5px;
+      color: #fff;
+    }
+  }
+}
+
+.area {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  h2 {
+    color: #fff;
+  }
 }
 
 
